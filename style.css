@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+/* navbar */
+
+
+#info-nav {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: solid black 1px;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 787px) {
+  #info-nav {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+}
+
+/* dark light mode */
+.dark-light-mode-cart {
+  font-size: 2rem;
+  padding: 0 20px;
+  margin: 10px auto ;
+}
+
+#right #change,
+.left .bi-cart {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* carousel */
+
+.carousel {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .carousel {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.carousel-caption * {
+  color: white;
+}
+
+/* cards */
+
+#card {
+  padding: 10px;
+}
+
+.card img {
+  height: 250px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.shoes-title {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: black solid 1px;
+  background: black;
+  color: white;
+}
+
+/* cotizacion */
+
+.cotizacion {
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 2px red;
+}
