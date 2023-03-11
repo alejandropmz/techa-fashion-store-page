@@ -90,6 +90,14 @@ p {
 
 .shoes {
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 10px auto;
+  box-shadow: 0 0 3px 0;
+  width: 20rem;
 }
 
 .card img {
