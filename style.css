@@ -35,6 +35,10 @@ p {
   font-size: 1rem;
 }
 
+/* #nav-items * {
+  color: white;
+} */
+
 @media screen and (min-width: 787px) {
   #info-nav {
     width: 50%;
