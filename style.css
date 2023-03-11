@@ -169,3 +169,20 @@ p {
   border-radius: 2px;
   padding: 0 5px;
 }
+
+/* footer */
+
+.footer {
+  padding: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: var(--bordes);
+}
+
+.paid-icons i {
+  font-size: 40px;
+}
