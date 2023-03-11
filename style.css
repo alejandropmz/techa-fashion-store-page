@@ -1,6 +1,8 @@
 
 :root {
   --black: black;
+  --bg-dark-mode: #2d2d2d;
+  --bordes: rgb(166, 164, 164);
 }
 
 * {
@@ -10,6 +12,13 @@
 
 p {
   margin: 0;
+}
+
+
+/* container */
+
+.dark-mode {
+  background: var(--bg-dark-mode);
 }
 
 
@@ -137,14 +146,14 @@ p {
 /* cotizacion */
 
 .cotizacion {
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: solid 1px rgb(166, 164, 164);
+  border: solid 1px var(--bordes);
 }
 
 .input {

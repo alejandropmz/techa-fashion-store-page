@@ -107,13 +107,93 @@ womenShoes.map((data) => {
 
 const darkLightButton = document.getElementById('dark-light-button');
 const darkLightIcon = document.getElementById('dark-light-icon');
+const cartIcon = document.getElementById('cart-icon');
+
+const infoNav = document.getElementById('info-nav');
+
+const containerFluid = document.getElementById('container-fluid');
+
+const shoesTitle = document.getElementsByClassName('shoes-title');
+const listShoesTitle = [...shoesTitle]
+
+let card = document.getElementsByClassName('card');
+card = [...card]
+
+const moreButton = document.getElementById('more-button');
+
+const cotizacion = document.getElementById('cotizacion');
+
 
 darkLightButton.addEventListener('click', () => {
-  if (darkLightButton.className == 'bi bi-toggle-off'){
+  if (darkLightButton.className == 'bi bi-toggle-off') {
+
     darkLightButton.className = 'bi bi-toggle-on'
+    darkLightButton.style.color = 'white'
+
+    infoNav.style.border = 'var(--bordes) solid 1px'
+    infoNav.style.borderTop = 'none'
+
     darkLightIcon.className = 'bi bi-moon-fill'
-  } else if (darkLightButton.className == 'bi bi-toggle-on'){
+    darkLightIcon.style.color = 'white'
+
+    containerFluid.className = 'container-fluid dark-mode'
+
+    cartIcon.style.color = 'white'
+
+    shoesTitle[0].style.background = 'transparent'
+    shoesTitle[0].style.color = 'white'
+    shoesTitle[0].style.border = 'solid 1px var(--bordes)'
+    shoesTitle[0].style.borderLeft = 'none'
+    shoesTitle[0].style.borderRight = 'none'
+    shoesTitle[1].style.background = 'transparent'
+    shoesTitle[1].style.color = 'white'
+    shoesTitle[1].style.border = 'solid 1px var(--bordes)'
+    shoesTitle[1].style.borderLeft = 'none'
+    shoesTitle[1].style.borderRight = 'none'
+
+    card.map((card)=>{
+      card.style.background = 'var(--bg-dark-mode)'
+      card.style.color = 'white'
+      card.style.boxShadow = 'none'
+      card.style.border = 'var(--bordes) solid 1px'
+    })
+
+    moreButton.style.background = 'white'
+    moreButton.style.color = 'black'
+
+    cotizacion.style.color = 'white'
+    cotizacion.style.borderRadius = '5px'
+    
+    
+  } else if (darkLightButton.className == 'bi bi-toggle-on') {
+    
     darkLightButton.className = 'bi bi-toggle-off'
+    darkLightButton.style.color = 'black'
+    
     darkLightIcon.className = 'bi bi-brightness-high'
+    darkLightIcon.style.color = 'black'
+    
+    containerFluid.className = 'container-fluid'
+    
+    cartIcon.style.color = 'black'
+    
+    shoesTitle[0].style.background = 'black'
+    shoesTitle[0].style.color = 'white'
+    shoesTitle[1].style.background = 'black'
+    shoesTitle[1].style.color = 'white'
+    
+    card.map((card)=>{
+      card.style.background = 'none'
+      card.style.color = 'black'
+      card.style.boxShadow = '0 0 3px 0'
+      card.style.border = 'none'
+    })
+    
+    moreButton.style.background = 'var(--black)'
+    moreButton.style.color = 'white'
+  
+  
+    cotizacion.style.color = 'black'
+    cotizacion.style.borderRadius = '0'
   }
 })
