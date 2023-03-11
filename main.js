@@ -102,3 +102,18 @@ womenShoes.map((data) => {
   women.appendChild(div)
 
 })
+
+/* cambio de clases dark mode */
+
+const darkLightButton = document.getElementById('dark-light-button');
+const darkLightIcon = document.getElementById('dark-light-icon');
+
+darkLightButton.addEventListener('click', () => {
+  if (darkLightButton.className == 'bi bi-toggle-off'){
+    darkLightButton.className = 'bi bi-toggle-on'
+    darkLightIcon.className = 'bi bi-moon-fill'
+  } else if (darkLightButton.className == 'bi bi-toggle-on'){
+    darkLightButton.className = 'bi bi-toggle-off'
+    darkLightIcon.className = 'bi bi-brightness-high'
+  }
+})
