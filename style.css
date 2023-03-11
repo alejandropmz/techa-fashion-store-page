@@ -123,6 +123,7 @@ p {
 
 .shoes-title {
   background: var(--black);
+  width: 60%;
   color: white;
   display: flex;
   justify-content: center;
@@ -130,6 +131,20 @@ p {
   margin: 15px auto;
   padding: 20px;
   font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .shoes-title {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 290px) {
+  .shoes-title {
+    width: 60%;
+    font-size: 1.2rem;
+  }
 }
 
 .more {
@@ -150,7 +165,7 @@ p {
 /* cotizacion */
 
 .cotizacion {
-  margin: 20px auto 0 auto;
+  margin: 2px auto;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
@@ -162,19 +177,45 @@ p {
 
 .input {
   margin: 20px auto;
+  width: 100%;
+}
+
+.input input {
+  border: solid 1px var(--bordes);
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  padding: 7px;
+}
+
+.input input:active,
+.input input:focus {
+  border: solid 2px red;
 }
 
 .input .bi-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid 1px var(--black);
-  border-radius: 2px;
-  padding: 0 5px;
+  border-radius: 0 2px 2px 0;
+  border-color: var(--bordes);
+  border-left: none;
+  padding: 0 10px;
+  color: var(--bordes);
+  cursor: pointer;
+}
+
+.input .bi-send:active {
+  color: black;
+  font-size: 1.1rem;
+  transition: all 0.1s ease-in;
 }
 
 /* footer */
 
 .footer {
   padding: 30px;
-  margin-top: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

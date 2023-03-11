@@ -112,8 +112,6 @@ const cartIcon = document.getElementById('cart-icon');
 let navItems = document.getElementsByClassName('nav-items');
 navItems = [...navItems]
 
-console.log(navItems);
-
 const infoNav = document.getElementById('info-nav');
 
 const containerFluid = document.getElementById('container-fluid');
@@ -212,4 +210,11 @@ darkLightButton.addEventListener('click', () => {
     cotizacion.style.color = 'black'
     cotizacion.style.borderRadius = '0'
   }
+})
+
+
+const input = document.getElementById('input');
+
+input.addEventListener('click', () => {
+  console.log(input);
 })
