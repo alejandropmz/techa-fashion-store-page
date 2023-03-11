@@ -21,7 +21,6 @@ const menShoes = [
     img: "images/men/zapatos-hombres-4.jpg",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content."
   }
-
 ]
 
 
@@ -47,3 +46,29 @@ const womenShoes = [
     description: "Some quick example text to build on the card title and make up the bulk of the card's content."
   }
 ]
+
+/* añadiendo los datos en men */
+
+const men = document.getElementById('men-section');
+
+menShoes.map((data) => {
+  let p = document.createElement('p')
+  p.className = 'card-text'
+  p.textContent = data.description
+
+  let divChild = document.createElement('div');
+  divChild.className = 'card-body'
+
+  let img = document.createElement('img')
+  img.className = 'card-img-top'
+  img.src = data.img
+
+  let div = document.createElement('div');
+  div.className = 'col-sm-6 col-md-3 card"'
+
+  divChild.appendChild(p);
+  div.appendChild(img);
+  div.appendChild(divChild);
+
+  men.appendChild(div);
+})

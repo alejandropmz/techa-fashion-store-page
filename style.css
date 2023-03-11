@@ -1,3 +1,8 @@
+
+:root {
+  --black: black;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,14 +11,14 @@
 p {
   margin: 0;
 }
+
+
 /* navbar */
-
-
 #info-nav {
   padding: 10px;
-  background: black;
+  background: var(--black);
   color: white;
-  border: solid black 1px;
+  border: solid var(--black) 1px;
   border-radius: 0 0 10px 10px;
   border-top: none;
   width: 100%;
@@ -33,6 +38,23 @@ p {
   font-size: 2rem;
   padding: 0 20px;
   margin: 10px auto ;
+}
+
+@media screen and (min-width: 650px) {
+  .dark-light-mode-cart {
+    padding: 0 160px;
+  }
+}
+@media screen and (min-width: 915px) {
+  .dark-light-mode-cart {
+    padding: 0 220px;
+  }
+}
+
+.left .bi-cart,
+#right .bi-toggle-off,
+#right .bi-toggle-on {
+  cursor: pointer;
 }
 
 #right #change,
@@ -60,7 +82,7 @@ p {
 
 /* cards */
 
-#card {
+.shoes {
   padding: 10px;
 }
 
@@ -73,7 +95,7 @@ p {
 }
 
 .shoes-title {
-  background: black;
+  background: var(--black);
   color: white;
   display: flex;
   justify-content: center;
@@ -92,8 +114,8 @@ p {
 .more button {
   padding: 8px 10px;
   border-radius: 10px;
-  border: black solid 1px;
-  background: black;
+  border: var(--black) solid 1px;
+  background: var(--black);
   color: white;
 }
 
@@ -101,11 +123,21 @@ p {
 
 .cotizacion {
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: solid 2px red;
+  border: solid 1px rgb(166, 164, 164);
+}
+
+.input {
+  margin: 20px auto;
+}
+
+.input .bi-send {
+  border: solid 1px var(--black);
+  border-radius: 2px;
+  padding: 0 5px;
 }
