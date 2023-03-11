@@ -23,6 +23,10 @@ p {
 
 
 /* navbar */
+.navbar {
+  padding: 20px 0;
+}
+
 #info-nav {
   padding: 10px;
   background: var(--black);
@@ -140,7 +144,7 @@ p {
   }
 }
 
-@media screen and (min-width: 290px) {
+@media screen and (max-width: 767px) {
   .shoes-title {
     width: 60%;
     font-size: 1.2rem;
@@ -187,10 +191,6 @@ p {
   padding: 7px;
 }
 
-.input input:active,
-.input input:focus {
-  border: solid 2px red;
-}
 
 .input .bi-send {
   display: flex;
@@ -208,7 +208,7 @@ p {
 .input .bi-send:active {
   color: black;
   font-size: 1.1rem;
-  transition: all 0.1s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /* footer */

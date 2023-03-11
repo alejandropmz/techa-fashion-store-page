@@ -126,6 +126,9 @@ const moreButton = document.getElementById('more-button');
 
 const cotizacion = document.getElementById('cotizacion');
 
+const input = document.getElementById('input');
+
+
 
 darkLightButton.addEventListener('click', () => {
   if (darkLightButton.className == 'bi bi-toggle-off') {
@@ -171,6 +174,8 @@ darkLightButton.addEventListener('click', () => {
     cotizacion.style.color = 'white'
     cotizacion.style.borderRadius = '5px'
 
+    input.style.background = 'var(--bg-dark-mode)'
+
 
   } else if (darkLightButton.className == 'bi bi-toggle-on') {
 
@@ -209,11 +214,12 @@ darkLightButton.addEventListener('click', () => {
 
     cotizacion.style.color = 'black'
     cotizacion.style.borderRadius = '0'
+
+    input.style.background = 'none'
   }
 })
 
 
-const input = document.getElementById('input');
 
 input.addEventListener('click', () => {
   console.log(input);
