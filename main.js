@@ -9,17 +9,17 @@ const menShoes = [
   {
     id: 2,
     img: "images/men/zapatos-hombres-2.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "Atque velit facere id sit? Cumque velit laboriosam accusamus, quibusdam quisquam at doloribus illo tenetur dolore."
   },
   {
     id: 3,
     img: "images/men/zapatos-hombres-3.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently."
   },
   {
     id: 4,
     img: "images/men/zapatos-hombres-4.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   }
 ]
 
@@ -28,12 +28,12 @@ const womenShoes = [
   {
     id: 1,
     img: "images/women/zapatos-mujer-1.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "free from repetition, injected humour, or non-characteristic words etc."
   },
   {
     id: 2,
     img: "images/women/zapatos-mujer-2.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const womenShoes = [
   {
     id: 4,
     img: "images/women/zapatos-mujer-4.jpg",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "accompanied by English versions from the 1914 translation by H. Rackham."
   }
 ]
 
@@ -71,4 +71,33 @@ menShoes.map((data) => {
   div.appendChild(divChild);
 
   men.appendChild(div);
+})
+
+
+/* añadiendo los datos en women */
+
+const women = document.getElementById('women');
+
+womenShoes.map((data) => {
+
+  const divChild = document.createElement('div');
+  divChild.className = 'card-body'
+
+  const p = document.createElement('p');
+  p.className = 'card-text'
+  p.textContent = data.description
+
+  const img = document.createElement('img');
+  img.className = 'card-img-top'
+  img.src = data.img
+
+  const div = document.createElement('div');
+  div.className = 'col-sm-6 col-md-3 card'
+
+  divChild.appendChild(p);
+  div.appendChild(img);
+  div.appendChild(divChild);
+
+  women.appendChild(div)
+
 })

@@ -51,6 +51,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .dark-light-mode-cart {
+    padding: 0 270px;
+  }
+}
+
 .left .bi-cart,
 #right .bi-toggle-off,
 #right .bi-toggle-on {
